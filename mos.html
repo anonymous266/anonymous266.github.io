@@ -1,0 +1,109 @@
+---
+layout: default
+title: "MOS Evaluation Protocol"
+---
+
+<div class="hero">
+  <h1>Details on MOS Evaluation Protocol</h1>
+  <p class="subtitle">Appendix — MOS Evaluation Setup</p>
+</div>
+
+<div class="prose">
+  <a href="index.html" class="back-link">← Back to Demo Page</a>
+
+  <!-- Figure: MOS Evaluation Setup -->
+  <div class="figure-grid">
+    <figure>
+      <img src="figures/mos_instruction.png" alt="MOS Instructions">
+      <figcaption>(a) Instructions provided to the participants.</figcaption>
+    </figure>
+    <figure>
+      <img src="figures/mos_protocol.png" alt="MOS Evaluation Interface">
+      <figcaption>(b) Interface of the MOS evaluation platform.</figcaption>
+    </figure>
+  </div>
+  <p class="figure-caption">
+    <strong>Figure:</strong> MOS evaluation setup: (a) detailed instructions for quality assessment, 
+    and (b) a snapshot of the evaluation interface.
+  </p>
+
+  <h2>Participants</h2>
+  <p>
+    We recruited 44 participants through community outreach. Given the multilingual scope of our 
+    evaluation, which spans 11 languages across diverse geographic regions (e.g., the United States, 
+    the United Kingdom, Germany, China, as well as regions in Africa and Asia), we selected participants 
+    with demonstrated familiarity with at least a subset of the evaluated languages. All participants 
+    were fluent in English, and several had lived in or had prior exposure to other language regions 
+    (e.g., Germany or Indonesia), ensuring reliable judgments.
+  </p>
+
+  <h2>Evaluation Procedure</h2>
+  <p>
+    To facilitate faithful evaluation, we provided both grapheme transcriptions and Romanized 
+    transcriptions for each utterance as phonetic guidance, allowing participants to assess whether 
+    the synthesized speech aligned with the intended text. Language information was also displayed 
+    for each sample. Participants were instructed to evaluate in a quiet environment using 
+    high-quality personal audio equipment (e.g., headphones). The use of loudspeakers was prohibited 
+    to avoid variability in acoustic perception. The detailed survey interface is illustrated in the 
+    figure above.
+  </p>
+
+  <h2>Stimuli and Assignment</h2>
+
+  <!-- Model table -->
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Language Coverage</th>
+        <th># Lang.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>VITS</td>
+        <td>EN, ZH, DE, JV, SU, KM, NP, AF, TN, XH, SI</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>+m-PLBERT</td>
+        <td>EN, ZH, DE</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>+XPhoneBERT</td>
+        <td>EN, ZH, DE, KM, AF</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td><strong>+UR-BERT</strong></td>
+        <td rowspan="3">EN, ZH, DE, JV, SU, KM, NP, AF, TN, XH, SI</td>
+        <td rowspan="3">11 each<br>(Total 22)</td>
+      </tr>
+      <tr>
+        <td>&nbsp;&nbsp;&bull; with ATP</td>
+      </tr>
+      <tr>
+        <td>&nbsp;&nbsp;&bull; without ATP</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="table-caption"><strong>Table:</strong> Details of the TTS models; 41 models in total.</p>
+
+  <p>
+    We randomly sampled 10 utterances per configuration. Sample identities were shared across 
+    models within each language to enable fair comparison (e.g., VITS, m-PLBERT, XPhoneBERT, 
+    and UR-BERT variants for English used identical text prompts). As shown in the table above, 
+    this resulted in 520 evaluated samples from 110 ground truth and 410 generated samples.
+  </p>
+  <p>
+    To mitigate listener fatigue and maintain consistent scoring criteria, the samples were divided 
+    into four non-overlapping groups of 130 utterances each (Groups A, B, C, and D). Participants 
+    were evenly assigned to groups (11 per group), ensuring that no evaluator assessed overlapping samples.
+  </p>
+</div>
+
+<footer>
+  <p>Anonymous submission — 2026</p>
+</footer>
+
