@@ -35,13 +35,14 @@ title: "Demo Page"
 <section class="samples">
   <h2>Audio Samples</h2>
   <p class="section-desc">
-    We present synthesized speech samples for each system across 11 languages.
-    All audio is sampled at 22,050 Hz. UR-BERT (w/o STP) denotes the variant trained solely with the masked language modeling objective, without the speech token prediction objective.
+    We present synthesized speech samples for each system across 11 languages. All audio is sampled at 22,050 Hz. 
+    
+    UR-BERT (w/o STP) denotes the variant trained solely with the masked language modeling objective, without the speech token prediction objective.
   </p>
 
   <!-- ============================================ -->
   <!-- HIGH-RESOURCE: English, German, Chinese      -->
-  <!-- GT, VITS, m-PLBERT, XPhoneBERT, URBERT, ABL  -->
+  <!-- GT, VITS, m-PLBERT, XPhoneBERT, UR-BERT, ABL  -->
   <!-- ============================================ -->
   <h3 class="group-title">High-Resource Languages</h3>
   <p class="group-desc">All models are supported for these languages.</p>
@@ -49,7 +50,7 @@ title: "Demo Page"
   <!-- English -->
   <div class="lang-block">
     <h4>English</h4>
-    <p class="transcription"><strong>Text:</strong> [English transcription placeholder]</p>
+    <p class="transcription" data-lang="english"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
@@ -57,18 +58,18 @@ title: "Demo Page"
           <th>VITS</th>
           <th>m-PLBERT</th>
           <th>XPhoneBERT</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/english/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/english/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/english/mplbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/english/xphonebert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/english/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/english/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/english/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/english/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/english/mplbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/english/xphonebert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/english/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/english/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -77,7 +78,7 @@ title: "Demo Page"
   <!-- German -->
   <div class="lang-block">
     <h4>German</h4>
-    <p class="transcription"><strong>Text:</strong> [German transcription placeholder]</p>
+    <p class="transcription" data-lang="german"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
@@ -85,18 +86,18 @@ title: "Demo Page"
           <th>VITS</th>
           <th>m-PLBERT</th>
           <th>XPhoneBERT</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/german/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/german/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/german/mplbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/german/xphonebert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/german/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/german/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/german/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/german/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/german/mplbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/german/xphonebert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/german/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/german/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -105,7 +106,7 @@ title: "Demo Page"
   <!-- Chinese -->
   <div class="lang-block">
     <h4>Chinese</h4>
-    <p class="transcription"><strong>Text:</strong> [Chinese transcription placeholder]</p>
+    <p class="transcription" data-lang="chinese"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
@@ -113,18 +114,18 @@ title: "Demo Page"
           <th>VITS</th>
           <th>m-PLBERT</th>
           <th>XPhoneBERT</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/chinese/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/chinese/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/chinese/mplbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/chinese/xphonebert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/chinese/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/chinese/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/chinese/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/chinese/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/chinese/mplbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/chinese/xphonebert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/chinese/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/chinese/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -132,32 +133,32 @@ title: "Demo Page"
 
   <!-- ============================================ -->
   <!-- GROUP 1: Afrikaans, Khmer                    -->
-  <!-- GT, VITS, XPhoneBERT, URBERT, URBERT (w/o STP)     -->
+  <!-- GT, VITS, XPhoneBERT, UR-BERT, UR-BERT (w/o STP)     -->
   <!-- ============================================ -->
-  <h3 class="group-title">Group 1 — URBERT &amp; XPhoneBERT Supported</h3>
-  <p class="group-desc">Both URBERT and XPhoneBERT support these languages. m-PLBERT is not available.</p>
+  <h3 class="group-title">Low Resource Languages (Group 1) — UR-BERT &amp; XPhoneBERT Supported</h3>
+  <p class="group-desc">Both UR-BERT and XPhoneBERT support these languages. m-PLBERT is not available.</p>
 
   <!-- Afrikaans -->
   <div class="lang-block">
     <h4>Afrikaans</h4>
-    <p class="transcription"><strong>Text:</strong> [Afrikaans transcription placeholder]</p>
+    <p class="transcription" data-lang="afrikaans"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
           <th>GT</th>
           <th>VITS</th>
           <th>XPhoneBERT</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/afrikaans/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/afrikaans/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/afrikaans/xphonebert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/afrikaans/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/afrikaans/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/afrikaans/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/afrikaans/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/afrikaans/xphonebert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/afrikaans/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/afrikaans/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -166,24 +167,24 @@ title: "Demo Page"
   <!-- Khmer -->
   <div class="lang-block">
     <h4>Khmer</h4>
-    <p class="transcription"><strong>Text:</strong> [Khmer transcription placeholder]</p>
+    <p class="transcription" data-lang="khmer"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
           <th>GT</th>
           <th>VITS</th>
           <th>XPhoneBERT</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/khmer/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/khmer/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/khmer/xphonebert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/khmer/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/khmer/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/khmer/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/khmer/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/khmer/xphonebert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/khmer/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/khmer/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -191,30 +192,30 @@ title: "Demo Page"
 
   <!-- ============================================ -->
   <!-- LOW-RESOURCE: Javanese, Nepali, etc.         -->
-  <!-- GT, VITS, URBERT, URBERT (w/o STP)                  -->
+  <!-- GT, VITS, UR-BERT, UR-BERT (w/o STP)                  -->
   <!-- ============================================ -->
-  <h3 class="group-title">Low-Resource Languages — URBERT Only</h3>
-  <p class="group-desc">Only URBERT supports these languages. XPhoneBERT and m-PLBERT are not available.</p>
+  <h3 class="group-title">Low-Resource Languages (Group 2) — UR-BERT Only</h3>
+  <p class="group-desc">Only UR-BERT supports these languages. XPhoneBERT and m-PLBERT are not available.</p>
 
   <!-- Javanese -->
   <div class="lang-block">
     <h4>Javanese</h4>
-    <p class="transcription"><strong>Text:</strong> [Javanese transcription placeholder]</p>
+    <p class="transcription" data-lang="javanese"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
           <th>GT</th>
           <th>VITS</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/javanese/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/javanese/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/javanese/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/javanese/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/javanese/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/javanese/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/javanese/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/javanese/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -223,22 +224,22 @@ title: "Demo Page"
   <!-- Nepali -->
   <div class="lang-block">
     <h4>Nepali</h4>
-    <p class="transcription"><strong>Text:</strong> [Nepali transcription placeholder]</p>
+    <p class="transcription" data-lang="nepali"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
           <th>GT</th>
           <th>VITS</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/nepali/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/nepali/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/nepali/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/nepali/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/nepali/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/nepali/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/nepali/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/nepali/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -247,22 +248,22 @@ title: "Demo Page"
   <!-- Setswana -->
   <div class="lang-block">
     <h4>Setswana</h4>
-    <p class="transcription"><strong>Text:</strong> [Setswana transcription placeholder]</p>
+    <p class="transcription" data-lang="setswana"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
           <th>GT</th>
           <th>VITS</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/setswana/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/setswana/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/setswana/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/setswana/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/setswana/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/setswana/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/setswana/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/setswana/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -271,22 +272,22 @@ title: "Demo Page"
   <!-- Xhosa -->
   <div class="lang-block">
     <h4>Xhosa</h4>
-    <p class="transcription"><strong>Text:</strong> [Xhosa transcription placeholder]</p>
+    <p class="transcription" data-lang="xhosa"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
           <th>GT</th>
           <th>VITS</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/xhosa/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/xhosa/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/xhosa/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/xhosa/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/xhosa/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/xhosa/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/xhosa/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/xhosa/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -295,22 +296,22 @@ title: "Demo Page"
   <!-- Sinhala -->
   <div class="lang-block">
     <h4>Sinhala</h4>
-    <p class="transcription"><strong>Text:</strong> [Sinhala transcription placeholder]</p>
+    <p class="transcription" data-lang="sinhala"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
           <th>GT</th>
           <th>VITS</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/sinhala/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/sinhala/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/sinhala/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/sinhala/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/sinhala/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/sinhala/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/sinhala/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/sinhala/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -318,30 +319,30 @@ title: "Demo Page"
 
   <!-- ============================================ -->
   <!-- UNSEEN: Sundanese                             -->
-  <!-- GT, VITS, URBERT, URBERT (w/o STP)                  -->
+  <!-- GT, VITS, UR-BERT, UR-BERT (w/o STP)                  -->
   <!-- ============================================ -->
-  <h3 class="group-title">Unseen Language — Zero-Shot</h3>
-  <p class="group-desc">Sundanese was <strong>not seen during URBERT pretraining</strong>. This evaluates zero-shot generalization.</p>
+  <h3 class="group-title">Low-Resource Languages (Group 3) — UR-BERT Only (Unseen Language)</h3>
+  <p class="group-desc">Sundanese was <strong>not seen during UR-BERT pretraining</strong>. This evaluates zero-shot generalization.</p>
 
   <!-- Sundanese -->
   <div class="lang-block">
     <h4>Sundanese</h4>
-    <p class="transcription"><strong>Text:</strong> [Sundanese transcription placeholder]</p>
+    <p class="transcription" data-lang="sundanese"><strong>Text:</strong> <span>Loading...</span></p>
     <table class="audio-table">
       <thead>
         <tr>
           <th>GT</th>
           <th>VITS</th>
-          <th>URBERT</th>
-          <th>URBERT (w/o STP)</th>
+          <th>UR-BERT</th>
+          <th>UR-BERT (w/o STP)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><audio controls preload="none"><source src="audio/sundanese/gt.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/sundanese/vits.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/sundanese/urbert.wav" type="audio/wav"></audio></td>
-          <td><audio controls preload="none"><source src="audio/sundanese/urbert_abl.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/sundanese/gt.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/sundanese/vits.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/sundanese/urbert.wav" type="audio/wav"></audio></td>
+          <td><audio controls preload="none"><source src="samples/sundanese/urbert_abl.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -352,3 +353,23 @@ title: "Demo Page"
 <footer>
   <p>Anonymous submission — 2026</p>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.transcription[data-lang]').forEach(function(el) {
+    var lang = el.getAttribute('data-lang');
+    var span = el.querySelector('span');
+    fetch('samples/' + lang + '/transcription.txt')
+      .then(function(res) {
+        if (!res.ok) throw new Error('Not found');
+        return res.text();
+      })
+      .then(function(text) {
+        span.textContent = text.trim();
+      })
+      .catch(function() {
+        span.textContent = '[transcription not available]';
+      });
+  });
+});
+</script>
